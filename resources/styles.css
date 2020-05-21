@@ -1,0 +1,21 @@
+.background {
+  viewport-fill: black;
+}
+
+#hours circle {
+  cy: 30%;
+  r: 10;
+  fill: slategray;
+}
+
+#minutes circle {
+  cy: 50%;
+  r: 10;
+  fill: slategray;
+}
+
+#seconds circle {
+  cy: 70%;
+  r: 10;
+  fill: slategray;
+}

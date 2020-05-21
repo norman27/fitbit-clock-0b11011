@@ -1,0 +1,25 @@
+<svg class="background">
+  <g id="hours">
+    <circle id="hours_16" cx="25%"/>
+    <circle id="hours_8" cx="41%"/>
+    <circle id="hours_4" cx="58%"/>
+    <circle id="hours_2" cx="74%"/>
+    <circle id="hours_1" cx="91%"/>
+  </g>
+  <g id="minutes">
+    <circle id="minutes_32" cx="8%"/>
+    <circle id="minutes_16" cx="25%"/>
+    <circle id="minutes_8" cx="41%"/>
+    <circle id="minutes_4" cx="58%"/>
+    <circle id="minutes_2" cx="74%"/>
+    <circle id="minutes_1" cx="91%"/>
+  </g>
+  <g id="seconds">
+    <circle id="seconds_32" cx="8%"/>
+    <circle id="seconds_16" cx="25%"/>
+    <circle id="seconds_8" cx="41%"/>
+    <circle id="seconds_4" cx="58%"/>
+    <circle id="seconds_2" cx="74%"/>
+    <circle id="seconds_1" cx="91%"/>
+  </g>
+</svg>
