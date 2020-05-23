@@ -6,6 +6,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.1.0] - 2020-05-23
+### Added
+- Settings for colors
+### Changed
+
 ## [1.0.2] - 2020-05-21
 ### Changed
 - Aligned the circles for hours and minutes to make it more readable

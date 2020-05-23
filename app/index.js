@@ -1,8 +1,20 @@
 import clock from "clock";
 import document from "document";
+import * as messaging from "messaging";
 import inverseBinaryFromNumber from "../common/utils.js";
 
 clock.granularity = "seconds";
+
+// initialize settings with default colors
+let settings = {
+    "color.active": "white",
+    "color.inactive": "slategray"
+};
+
+// listen on settings changes
+messaging.peerSocket.onmessage = function(evt) {
+    settings[evt.data.key] = evt.data.value;
+}
 
 const hours = {
   1: document.getElementById("hours_1"),
@@ -36,19 +48,19 @@ clock.ontick = (evt) => {
 
   for (let i = 0; i < hoursBinary.length; i++) {
     hours[Math.pow(2, i)].style.fill = (hoursBinary.charAt(i) === '1')
-        ? 'white'
-        : 'slategray';;
+        ? settings["color.active"]
+        : settings["color.inactive"];
   }
 
   for (let i = 0; i < minutesBinary.length; i++) {
     minutes[Math.pow(2, i)].style.fill = (minutesBinary.charAt(i) === '1')
-        ? 'white'
-        : 'slategray';
+        ? settings["color.active"]
+        : settings["color.inactive"];
   }
 
   for (let i = 0; i < secondsBinary.length; i++) {
     seconds[Math.pow(2, i)].style.fill = (secondsBinary.charAt(i) === '1')
-        ? 'white'
-        : 'slategray';
+        ? settings["color.active"]
+        : settings["color.inactive"];
   }
 }
