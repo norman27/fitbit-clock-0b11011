@@ -1,6 +1,6 @@
 # fitbit-clock-0b11011
 Binary clockface for the fitbit.
-https://gallery.fitbit.com/details/84e4e4bc-5847-4a77-873c-386be1f60971
+[Get it here](https://gallery.fitbit.com/details/84e4e4bc-5847-4a77-873c-386be1f60971)
 
 ## Preview
 ### Fitbit Versa
@@ -10,8 +10,8 @@ https://gallery.fitbit.com/details/84e4e4bc-5847-4a77-873c-386be1f60971
 ![Ionic](https://raw.githubusercontent.com/norman27/fitbit-clock-0b11011/master/screenshots/ionic.png)  
 
 ## Build and Release
-Useful commands to use the [https://dev.fitbit.com/release-notes/fitbit-os-simulator/](Fitbit OS Simulator)
-with [https://github.com/Fitbit/developer-bridge/tree/master/packages/sdk-cli](fitbit CLI)
+Useful commands to use the [Fitbit OS Simulator](https://dev.fitbit.com/release-notes/fitbit-os-simulator/)
+with [fitbit CLI](https://github.com/Fitbit/developer-bridge/tree/master/packages/sdk-cli)
 
 First open the Fitbit OS Simulator, and afterwards run these commands:
 ```bash
@@ -24,4 +24,4 @@ screenshot screenshots/[versa|ionic].png
 ```
 
 Screenshots and the `.fba` which can be found in the build-folder can be used to
-release to [https://gam.fitbit.com/apps](fitbit app gallery).
+release to [fitbit app gallery](https://gam.fitbit.com/apps).
