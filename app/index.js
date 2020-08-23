@@ -64,6 +64,7 @@ clock.ontick = (evt) => {
 // listen on settings changes
 messaging.peerSocket.onmessage = function(evt) {
   settings[evt.data.key] = evt.data.value;
+  saveSettings();
 }
 
 // register for unload event
@@ -71,9 +72,8 @@ me.onunload = saveSettings;
 
 function loadSettings() {
   try {
-    return fs.readFileSync(SETTINGS_FILE, {encoding: "json"});
+    return fs.readFileSync(SETTINGS_FILE, "json");
   } catch (exception) {
-    console.log("default settings");
     return {
       "color.active": "white",
       "color.inactive": "slategray"
@@ -82,5 +82,5 @@ function loadSettings() {
 }
 
 function saveSettings() {
-  fs.writeFileSync(SETTINGS_FILE, settings)
+  fs.writeFileSync(SETTINGS_FILE, settings, "json");
 }
